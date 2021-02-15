@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body background="./images/Green-palm-leaves-backgrounds-vector-06.jpg"></body>
+  <!-- main navbar -->
+  <div id="nav"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-navml-auto">
+          <div class="nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="district.html">Districts</a>
+          <a class="nav-link" href="login.html">Login</a>
+          <a class="nav-link" href="signup.html">Signup</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+       <!-- /navbar --> 
+
+    <div class="row">
+      <div class="logosize">
+        <img src="./images/logosmall.jpg" alt="logo">
+    </div>
+    <!-- login -->
+    <form action="index.html">
+    <div class="favu">
+        <p id="sed">LOGIN</p>
+        <br>
+        <p> Please  login  with  your credentials.<br>If you are not a member,Please <a href="signup.html">Signup</a></p>
+        <br>
+        <form>
+          <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else. </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass"title="Password must contain at least 8 characters, including UPPER/lowercase and numbers" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
+        </div>
+        <!-- <div id="meter_wrapper">
+          <div id="meter"></div>
+         </div>
+         <br>
+          -->
+         <span id="pass_type"></span>
+          
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    <!--/ login -->
+    <script src="pswd.js"></script>
+</body>
+</html>
